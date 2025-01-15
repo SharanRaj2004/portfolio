@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharan's Portfolio</title> 
+    <style>
+        :root {
+            --bg-primary: #0a192f;
+            --bg-secondary: #112240;
+            --text-primary: #fcfcfd;
+            --text-secondary: #888b99;
+            --accent: #6486ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            background-color: var(--bg-secondary);
+        }
+
+        nav {
+            padding: 1rem;
+            background-color: var(--bg-secondary);
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        .highlight {
+            color: var(--accent);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            background-color: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background-color: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--bg-secondary);
+            margin-top: 4rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+    </style>
+    <style>
+        body {
+            font-size: larger;
+            margin: 0;
+            height: 100rch;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        
+    </style>
+    <style>
+         body {
+            font-size: larger;
+            margin: 0;
+            height: 100rch;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Welcome to my portfolio</h1>
+     <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero" id="about">
+        <h1>Hi, I'm <span class="highlight">Sharan Raj</span></h1>
+        <!--Adding a photo-->
+      <center>  <img src="sharan.jpg" alt="Describe of the photo" width="200"></center>
+        <p>Computer Science Student & Programming Enthusiast</p>
+        <p>Currently exploring the vast world of software development and always eager to learn new technologies</p>
+        <br><br>
+        <ul>
+            <li>Currently studying in Jyothy Institute Of Technology</li> 
+            <li>Passionate about exploring the ever-evolving world of technology</li>
+            <li>Leveraging my skills in programming, problem-solving, and innovation to create impactful solutions</li>
+            <li>I have always been fascinated by the potential of technology to transform ideas into reality and solve real-world problems.</li>
+            <li>I welcome you to explore and connect with me to discuss potential collaborations or opportunities</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <p>Python, C, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, Basic JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <p> VS Code, Photoshop, Unity </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>I'm currently looking for internship opportunities and always open to learning new things.</p>
+        <p>Find me on LinkedIn to explore my journey and connect professionally.</p>
+        <p>Discover my projects and contributions on GitHub</p>
+        <p>Available for internships, freelance projects, or full-time roles—let's create something impactful together</p>
+        <p>I’d love to hear from you! Whether you have a question, an opportunity, or just want to say hello, feel free to reach out</p>
+        <div class="social-links">
+            <a href="mailto:sharansaravanan14@gmail.com">Email</a>
+            <a href="https://github.com/SharanRaj2004">GitHub</a>
+            <a href=" https://www.linkedin.com/in/sharan-raj-9165761b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Sharan Raj. All rights reserved.</p>
+    </footer>
+</body>
+</html>
